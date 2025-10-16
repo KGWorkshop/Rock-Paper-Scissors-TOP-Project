@@ -6,3 +6,5 @@ function getComputerChoice() {
 		case 2: return 'scissors'
 	}
 }
+
+console.log(getComputerChoice());
