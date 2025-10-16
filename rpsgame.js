@@ -23,6 +23,9 @@ function playGame() {
   let computerScore = 0;
 
   function playRound(humanChoice, computerChoice) {
+    humanChoice = getHumanChoice();
+    computerChoice = getComputerChoice();
+		
     if (humanChoice === "paper" && computerChoice === "rock") {
       console.log("You win! Paper beats Rock.");
       humanScore += 1;
