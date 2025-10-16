@@ -25,7 +25,7 @@ function playGame() {
   function playRound(humanChoice, computerChoice) {
     humanChoice = getHumanChoice();
     computerChoice = getComputerChoice();
-		
+
     if (humanChoice === "paper" && computerChoice === "rock") {
       console.log("You win! Paper beats Rock.");
       humanScore += 1;
@@ -48,11 +48,20 @@ function playGame() {
       console.log("Draw.");
     }
   }
+
   playRound(humanSelection, computerSelection);
   playRound(humanSelection, computerSelection);
   playRound(humanSelection, computerSelection);
   playRound(humanSelection, computerSelection);
   playRound(humanSelection, computerSelection);
+
+  if (humanScore > computerScore) {
+    console.log("You win!");
+  } else if (humanScore < computerScore) {
+    console.log("You lose!");
+  } else {
+    console.log("You tie.");
+  }
 }
 
 playGame();
