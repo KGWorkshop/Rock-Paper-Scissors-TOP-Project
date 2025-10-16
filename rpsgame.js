@@ -53,5 +53,3 @@ function playGame() {
 }
 
 playGame();
-console.log(humanScore);
-console.log(computerScore);
